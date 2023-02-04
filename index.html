@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <title>Task Manager</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo&family=Open+Sans&family=Roboto&display=swap"
+      rel="stylesheet">
+    <style>
+
+    * {
+      box-sizing: border-box;
+    }
+      body {
+        font-family: "cairo";
+      }
+      form {
+        width: 500px;
+        max-width: 100%;
+        background-color: #ddd;
+        border-radius: 20px;
+        padding: 20px;
+        display: flex;
+        gap: 10px;
+        margin: 30px auto;
+      }
+
+      form input {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 10px;
+      }
+      form input:first-child {
+        flex: 1;
+        outline-color: orangered;
+        font-size: 20px;
+      }
+      form input:nth-child(2),
+      .task button {
+        background-color: orangered;
+        color:white;
+        font-weight: bold;
+        cursor: pointer;
+      }
+      .tasks-container {
+        width: 500px;
+        max-width: 100%;
+        background-color: #ddd;
+        border-radius: 20px;
+        padding: 20px;
+        /* display: flex; */
+        gap: 10px;
+        margin: 30px auto;
+      }
+
+      .tasks-container .task {
+        background-color: white;
+        display: flex;
+        gap: 10px;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 10px;
+        width: 100%;
+        padding: 10px 20px;
+        margin-block: 10px;
+      }
+      p {
+        margin:0;
+        text-transform: uppercase;
+      }
+    .task button {
+      border: none;
+      border-radius: 10px;
+      padding: 6px 10px;
+    }
+
+
+    </style>
+  </head>
+
+  <body>
+
+    <form action="">
+      <input type="text" class="task-name">
+      <input type="submit" value="Add Task" class="add-task">
+    </form>
+    <div class="tasks-container"></div>
+
+
+    <!-- <script src="main.js"></script> -->
+    <!-- <script src="assignment/lessons 111 To 114.js"></script> -->
+    <!-- <script src="assignment/challenge v114.js"></script> -->
+    <script src="challenge v114.js"></script>
+  </body>
+
+</html>
